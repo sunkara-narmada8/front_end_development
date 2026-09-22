@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopZone - Online Shopping Website</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+
+        body {
+            background: #f8f1e7;
+        }
+
+        /* Header */
+
+        .header {
+            background: #4A148C;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #FFCA28;
+        }
+
+        .search input[type="text"] {
+            width: 350px;
+            padding: 11px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .search input[type="submit"] {
+            padding: 11px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #FFCA28;
+            border: none;
+            font-weight: bold;
+        }
+
+        .menu {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Categories */
+
+        .category {
+            background: #7B1FA2;
+            display: flex;
+            justify-content: space-around;
+            padding: 18px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Banner */
+
+        .banner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* Title */
+
+        .title {
+            background: #6A1B9A;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Products */
+
+        .products {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 0px 12px #999;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .price {
+            color: #D32F2F;
+            font-size: 25px;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        button {
+            background: #4A148C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #7B1FA2;
+        }
+
+        /* Offers */
+
+        .offers {
+            background: #FFF3CD;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .offers h2 {
+            color: #C62828;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .offers p {
+            font-size: 18px;
+        }
+
+        /* Services */
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            background: #EDE7F6;
+            padding: 35px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+
+        .footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer h2 {
+            margin-bottom: 15px;
+            color: #FFCA28;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="logo">
+            Shop<span>Zone</span>
+        </div>
+
+        <div class="search">
+
+            <input type="text" placeholder="Find your favorite items">
+
+            <input type="submit" value="Search">
+
+        </div>
+
+        <div class="menu">
+
+            Sign In |
+            Create Account |
+            Bag (0)
+
+        </div>
+
+    </div>
+
+
+    <!-- Categories -->
+
+    <div class="category">
+
+        <div>Clothing</div>
+        <div>Food</div>
+        <div>Gadgets</div>
+        <div>Smartphones</div>
+        <div>Home</div>
+        <div>Cosmetics</div>
+        <div>Stationery</div>
+        <div>Fitness</div>
+
+    </div>
+
+
+    <!-- Banner -->
+
+    <div class="banner">
+
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400">
+
+    </div>
+
+
+    <!-- Product Title -->
+
+    <div class="title">
+
+        POPULAR PICKS
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="products">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400">
+
+            <h3>Running Sneakers</h3>
+
+            <p class="price">₹2,799</p>
+
+            <button>Add to Bag</button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400">
+
+            <h3>Premium Coffee</h3>
+
+            <p class="price">₹699</p>
+
+            <button>Add to Bag</button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400">
+
+            <h3>Fashion Outfit</h3>
+
+            <p class="price">₹1,899</p>
+
+            <button>Add to Bag</button>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400">
+
+            <h3>Classic Wrist Watch</h3>
+
+            <p class="price">₹4,299</p>
+
+            <button>Add to Bag</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Offers -->
+
+    <div class="offers">
+
+        <h2>✨ Hot Deals of the Day ✨</h2>
+
+        <p>🔥 Get up to 30% OFF on selected fashion items</p>
+
+        <br>
+
+        <p>🚚 Free shipping on orders above ₹999</p>
+
+        <br>
+
+        <p>🎁 Special combo deals available today</p>
+
+        <br>
+
+        <p>💰 Enjoy exciting discounts on gadgets</p>
+
+    </div>
+
+
+    <!-- Customer Services -->
+
+    <div class="services">
+
+        <div>↩ Hassle-Free Returns</div>
+
+        <div>📞 Customer Care</div>
+
+        <div>🔐 Safe & Secure Checkout</div>
+
+        <div>🚀 Quick Delivery</div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <h2>ShopZone</h2>
+
+        <p>
+            Home |
+            Shop |
+            Deals |
+            About |
+            Contact |
+            Support
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 ShopZone. Your trusted destination for online shopping.
+        </p>
+
+    </div>
+
+</body>
+</html>
+```
+
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopZone</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            background-color: purple;
+            color: white;
+            padding: 15px;
+        }
+
+        .product {
+            background-color: white;
+            width: 200px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ShopZone</h1>
+
+    <p>Home | Products | Contact</p>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400">
+
+        <h2>Sports Shoes</h2>
+
+        <p>Price: ₹2499</p>
+
+        <button>Add to Cart</button>
+    </div>
+
+    <footer>
+        <p>© 2026 ShopZone</p>
+    </footer>
+
+</body>
+</html>
